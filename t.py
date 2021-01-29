@@ -1,4 +1,5 @@
 import streamlit as st
+pip install tweepy
 import tweepy
 import matplotlib.pyplot as plt
 from  textblob import TextBlob 
