@@ -2,6 +2,5 @@ streamlit
 tweepy
 matplotlib
 textblob
-time
 pandas
 numpy
