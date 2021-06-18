@@ -8,11 +8,11 @@ import numpy as np
 st.title("Project : Twiiter sentiment analysis")
 st.sidebar.header('Enter the search keyword')
 
-consumer_key="fR1Y9FZEUeLmk1FIl00Wo4pRb"
-consumer_secret="g3isqAlSJs6N2yjv6MEZh6n7NMJ6yKkxwroLw0VHyziOeQXGcU"
+consumer_key="uYVgbslwc2izCy8CRJvS0ejYN"
+consumer_secret="ANFwBIl4sNoj6yHRgUE3OyYlx0Eqd35kKuIP8T3AcztM7mwT08"
 
-access_token="584670834-SU1umK1Ib4Vye5plwTvTNHVwa0cZcYhvUAyqGMnM"
-access_token_secret="Hdij0oO1pMEvh9yOAuL7rIpoWj4eysYAiKby9IkcKJ9Xo"
+access_token="584670834-6ia2htX4nHQix9T70UYItj1v1CeQXToJ0Qp0gjC0"
+access_token_secret="E5gLKmVhMzkEFtzQgNkE0hDSfDjv2qR9bVo9jGyxU9lPE"
 
 dir(tweepy)
 # connected to jump server of twitter
