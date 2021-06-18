@@ -2,7 +2,7 @@ import streamlit as st
 import tweepy
 import matplotlib.pyplot as plt
 from  textblob import TextBlob 
-import time
+
 import pandas as pd
 import numpy as np
 st.title("Project : Twiiter sentiment analysis")
