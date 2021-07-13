@@ -6,8 +6,8 @@ from  textblob import TextBlob
 
 import pandas as pd
 import numpy as np
-st.title("Project : Twiiter sentiment analysis")
-st.sidebar.header('Enter the search keyword')
+st.title("Project : Twitter sentiment analysis")
+st.sidebar.header('Enter the search keyword to analyse the tweet polarity')
 
 consumer_key="uYVgbslwc2izCy8CRJvS0ejYN"
 consumer_secret="ANFwBIl4sNoj6yHRgUE3OyYlx0Eqd35kKuIP8T3AcztM7mwT08"
@@ -31,12 +31,13 @@ c=0
 
 for tweet in tweet_data:
    #print(tweet.text)
-   analysis=TextBlob(tweet.text) # here it will apply NLP\
+   analysis=TextBlob(tweet.text) 
+   # here it will apply NLP\
    #print(analysis.sentiment)
    # now checking polarity only
    st.text(tweet.text)
    c=c+1
-   print(c)
+   st.text("tweet:",c)
    if analysis.sentiment.polarity > 0:
       print("positive")
       pos=pos+1
@@ -61,7 +62,7 @@ print(lis)
 # see the name of the account print out
 api = tweepy.API(auth)
 print(api.me().name)
-st.text(api.me().name)
+st.text("above tweets are from twitter ",api.me().name)
 
 chart_data = pd.DataFrame(lis)
 st.bar_chart(chart_data)
